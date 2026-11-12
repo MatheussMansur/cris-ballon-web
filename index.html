@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cris Ballon Ateliê</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="top-bar">Arranjos de balões para a sua festa em Foz do Iguaçu</div>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="Balão">
+      <div>
+        <span class="logo-name">Cris Ballon</span>
+        <span class="logo-subtitle">ATELIÊ</span>
+      </div>
+    </a>
+    <div class="search">
+      <input type="text" id="search-input" placeholder="O que você está procurando?">
+    </div>
+    <button class="cart-button" id="cart-button">
+      <img src="img/cart.svg" alt="">
+      <span class="cart-count" id="cart-count">0</span>
+      <span>Carrinho</span>
+    </button>
+  </header>
+
+  <nav class="menu">
+    <button id="menu-home" class="active">Início</button>
+    <button id="menu-highlights">Destaques</button>
+    <button id="menu-sales">Promoções</button>
+  </nav>
+
+  <main>
+    <section class="shop" id="shop-screen">
+      <aside class="categories">
+        <h2>Categorias</h2>
+        <button class="categories-button" id="categories-button">Categorias</button>
+        <ul class="category-list" id="category-list"></ul>
+      </aside>
+
+      <div class="products">
+        <div class="products-top">
+          <div>
+            <h1 id="shop-title">Todos os produtos</h1>
+            <p class="item-count" id="item-count"></p>
+          </div>
+          <select class="sort-select" id="sort-select">
+            <option value="relevant">Mais relevantes</option>
+            <option value="price-asc">Menor preço</option>
+            <option value="price-desc">Maior preço</option>
+          </select>
+        </div>
+        <p class="empty-message hidden" id="empty-search">Nenhum produto encontrado</p>
+        <div class="product-grid" id="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="cart hidden" id="cart-screen">
+      <h1>Meu carrinho</h1>
+      <p class="order-message hidden" id="order-message">Pedido recebido! Obrigado por comprar na Cris Ballon.</p>
+      <p class="empty-message hidden" id="cart-empty">Seu carrinho está vazio</p>
+      <ul class="cart-list" id="cart-list"></ul>
+      <div class="cart-total" id="cart-total">
+        <span>Total</span>
+        <span id="cart-total-value">R$ 0,00</span>
+      </div>
+      <button class="finish-button" id="finish-button">Finalizar pedido</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>Cris Ballon Ateliê</h3>
+      <p>Arranjos de balões para festas e eventos.</p>
+    </div>
+    <div>
+      <h3>Endereço</h3>
+      <p>Rua das Festas, 123 - Centro<br>Foz do Iguaçu - PR</p>
+    </div>
+    <div>
+      <h3>Atendimento</h3>
+      <p>(45) 99999-0000<br>Segunda a sábado, das 9h às 18h</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
